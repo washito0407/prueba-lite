@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
         int opcion;
-
+//menu de opciones
         System.out.println("Menu de libros: ");
         System.out.println("1) Las mil y una noches");
         System.out.println("2) Don Quijote de la Mancha");
@@ -14,7 +14,7 @@ public class Main {
         System.out.println("5) Los tres mosqueteros");
         System.out.println("Elija una opcion:  ");
         opcion = entrada.nextInt();
-
+//opciones por imprimir en caso que el usuaio digite un valor de cada instancia
         if (opcion == 1) {
             metodolib libro1 = new metodolib("Las mil y una noches", 1949,"Ramón Sopena");
             libro1.mostrar();
