@@ -1,17 +1,43 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import java.util.Scanner;
+
 public class Main {
+
     public static void main(String[] args) {
-        // Press Alt+Intro with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Scanner entrada = new Scanner(System.in);
+        int opcion;
 
-        // Press Mayús+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        System.out.println("Menu de libros: ");
+        System.out.println("1) Las mil y una noches");
+        System.out.println("2) Don Quijote de la Mancha");
+        System.out.println("3) Orgullo y prejuicio");
+        System.out.println("4) Frankenstein o el moderno Prometeo");
+        System.out.println("5) Los tres mosqueteros");
+        System.out.println("Elija una opcion:  ");
+        opcion = entrada.nextInt();
 
-            // Press Mayús+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
+        if (opcion == 1) {
+            metodolib libro1 = new metodolib("Las mil y una noches", 1949,"Ramón Sopena");
+            libro1.mostrar();
+        }
+
+        if (opcion == 2) {
+            metodolib libro2 = new metodolib("Don Quijote de la Mancha", 1605,"Miguel Cervantes");
+            libro2.mostrar();
+        }
+
+        if (opcion == 3) {
+            metodolib libro3 = new metodolib("Orgullo y prejuicio", 1813,"Jane Austen");
+            libro3.mostrar();
+        }
+
+        if (opcion == 4) {
+            metodolib libro4 = new metodolib("Frankenstein o el moderno Prometeo", 1818,"Mary Shelley");
+            libro4.mostrar();
+        }
+
+        if (opcion == 5) {
+            metodolib libro5 = new metodolib("Los tres mosqueteros", 1844,"Alexandre Dumas");
+            libro5.mostrar();
         }
     }
 }
